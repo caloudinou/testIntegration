@@ -22,6 +22,10 @@ b{
   margin-bottom: 0;
   min-height: 80px;
 }
+nav{
+  position: fixed;
+  top:0;
+}
 
 .nav li {
   display: inline;
@@ -40,5 +44,5 @@ b{
   height: 100%;
 }
 *{
-  text:justify ;
+  text-align:justify ;
 }

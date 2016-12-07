@@ -7,14 +7,13 @@
   z-index: 0;
 }
 .parralax-1{
-  background: url(/src/img/bubbles1.png) 5% 50% no-repeat;
-
+  background: url(/src/img/logo.png) 5% 50% no-repeat;
 }
 .parralax-2{
-   background: url(/src/img/bubbles3.png) 95% 90% no-repeat;
+   background: url(/src/img/header-bg.png) 95% 90% no-repeat;
 }
-.body{
-  background: navy url(/src/img/deepsea.jpg) top center no-repeat fixed;
+.body-parralax{
+  background: navy url(/src/img/header-bg.png) top center no-repeat fixed;
   background-size: cover;
-  height: 2000px;
+  height: 400px;
 }
