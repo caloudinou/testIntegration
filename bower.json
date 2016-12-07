@@ -1,0 +1,22 @@
+{
+  "name": "TemplateGeneral",
+  "version": "1.0.0",
+  "authors": [
+    "Grizzly <pascalou@gmail.com>"
+  ],
+  "description": "test-recrutement",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
