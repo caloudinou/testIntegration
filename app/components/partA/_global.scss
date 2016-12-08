@@ -18,9 +18,8 @@
 }
 b{
   font-weight: 400;
-  @media(min-width: 780px) {
+  @media(min-width: 750px) {
     font-weight: 900;
-
   }
   font-style: italic;
 }
@@ -36,9 +35,17 @@ body>header{
   background: rgba(0, 0, 0, 0.5) !important;
   margin: 0 !important;
   border: none;
+  & .navbar-toggle{
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none;
+  }
 }
 *{
   font-size: 1.85rem;
+  @media(max-width: 750px) {
+    text-align: center;
+
+  }
 }
 p{
   padding-top: 3%;
@@ -46,7 +53,10 @@ p{
 footer{
   background: url(/src/img/darthvader.jpg) no-repeat;
   background-size: cover;
+  background-position: center top;
   & *{
+
+
     line-height: 43px;
   }
   & > header{
@@ -56,7 +66,11 @@ footer{
 .underline{
   &, &>a{
   font-weight: 300;
-  font-size: 1.65rem;
+
+    font-size: 1.30rem;
+    @media(min-width: 750px) {
+      font-size: 1.65rem;
+    }
   }
   &>a{
     text-decoration: underline;
@@ -65,6 +79,48 @@ footer{
 h3{
   font-weight: 300 !important;
   font-size: 1.65rem !important;
+  @media(max-width: 750px) {
+    font-size: 1.35rem !important;
+    line-height: 40px;
+  }
   padding-top: 0 !important;
   margin-top: 0 !important;
+}
+.in{
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  margin: 0px!important ;
+}
+.navbar-toggle{
+  border:none;
+  position: relative;
+  z-index: 100;
+  & .burger{
+    display: none;
+    width: 64%;
+    margin: auto;
+  }
+  & .close{
+    display: block;
+    width: 64%;
+    margin: auto;
+    float: none;
+  }
+  &.collapsed{
+    & .burger{
+      display: block;
+    }
+    & .close{
+      display: none;
+    }
+  }
+}
+.overflow-hidden{
+  overflow: hidden;
 }
