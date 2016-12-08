@@ -170,3 +170,9 @@ h3{
 b{
   text-decoration: underline;
 }
+ul.custom-list li {
+  list-style-type: none;
+  &:before {
+    content: "- ";
+  }
+}
