@@ -18,9 +18,6 @@ var Parralax = (function(){
             this.animationParralax(this.elements);
 
         },
-        checkDedup:function(){
-
-        },
         parallaxDecalageVertical:function(){
             return Parralax.elements.map(function (el) {
                return document.querySelector(el.target).style.top = -window.pageYOffset * el.movePer + 'px';
@@ -45,8 +42,8 @@ var Parralax = (function(){
 
 window.onload = function() {
     Parralax.init([
-        {'target': '.parralax-1', 'movePer': .2},
-        {'target': '.parralax-2', 'movePer': .5}
+        {'target': '.parralax-1', 'movePer': .2, 'parent':'.body-parralax'},
+        {'target': '.parralax-2', 'movePer': .5, 'parent':'.body-parralax'},
         ]);
 };
 /**
