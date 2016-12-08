@@ -1,3 +1,45 @@
+[class^="parralax"]{
+  width: 100%;
+  height: 600px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 0;
+}
+.parralax-1{
+  background: url(/src/img/header-bg.png)  no-repeat;
+  background-size:cover;
+  z-index: -1;
+}
+.parralax-2{
+  background: url(/src/img/logo.png) 50% 50% no-repeat;
+}
+.body-parralax{
+  background:  url(/src/img/header-bg.png) top center no-repeat fixed;
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
+}
+.padding{
+  &-container{
+    padding: 5%;
+  }
+  &-text{
+    padding: 0%;
+  }
+  &-figure{
+    padding-top: 3%;
+  }
+}
+.width-100{
+  width: 100%;
+}
+h2{
+  &.text-little{
+    font-size: 1.9rem;
+  }
+}
+
 .bg{
   &-white{
     background-color: white;
@@ -47,6 +89,18 @@ body>header{
 
   }
 }
+.font-size{
+  &-18{
+    &, & *{
+      font-size: 14px;
+    }
+  }
+  &-14{
+    &, & *{
+      font-size: 14px;
+    }
+  }
+}
 p{
   padding-top: 3%;
 }
@@ -69,7 +123,7 @@ footer{
 
     font-size: 1.30rem;
     @media(min-width: 750px) {
-      font-size: 1.65rem;
+      font-size: 14px;
     }
   }
   &>a{
@@ -78,9 +132,9 @@ footer{
 }
 h3{
   font-weight: 300 !important;
-  font-size: 1.65rem !important;
+  font-size: 14px !important;
   @media(max-width: 750px) {
-    font-size: 1.35rem !important;
+    font-size: 14px !important;
     line-height: 40px;
   }
   padding-top: 0 !important;
@@ -124,44 +178,34 @@ h3{
 .overflow-hidden{
   overflow: hidden;
 }
-[class^="parralax"]{
-  width: 100%;
-  height: 600px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 0;
+*{
+  font-family: 'Open Sans', sans-serif;
 }
-.parralax-1{
-  background: url(/src/img/header-bg.png)  no-repeat;
-  background-size:cover;
-  z-index: -1;
-}
-.parralax-2{
-  background: url(/src/img/logo.png) 50% 50% no-repeat;
-}
-.body-parralax{
-  background:  url(/src/img/header-bg.png) top center no-repeat fixed;
-  background-size: cover;
-  height: 600px;
-  overflow: hidden;
-}
-.padding{
-  &-container{
-    padding: 5%;
-  }
-  &-text{
-    padding: 0%;
-  }
-  &-figure{
-    padding-top: 3%;
+
+.navbar-inverse .navbar-nav{
+  &.white>li>a{
+    color:white !important;
+    font-weight: 300;
   }
 }
-.width-100{
-  width: 100%;
+
+.min-width-100{
+  @media(max-width: 750px) {
+    transform: translateX(-50%);
+  }
+  @media(min-width: 750px) {
+    min-width:100%;
+  }
 }
-h2{
-  &.text-little{
-    font-size: 1.9rem;
+
+@media (min-width: 768px){
+  .navbar-nav>li {
+    float: none !important;
+    display: inline-block!important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: auto !important;
+    text-align: center !important;
   }
 }

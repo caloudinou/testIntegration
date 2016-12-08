@@ -63,7 +63,7 @@ const ParralaxES6 = (() => {
         return class ParralaxEffect{
             /**
              * constructor
-             * @params data = Array[{target: DOM, movePer: movePer}] , matriceData Obj, otherParam = Arguments
+             * @params data = Array[{target: DOM, movePer: movePer}]
              */
             constructor(data = []) {
                 this.checkParamFormat(data)
