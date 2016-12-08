@@ -12,6 +12,10 @@
 .white{
   color:white;
 }
+.grey{
+  color: #9d9d9d;
+  font-weight: 400;
+}
 b{
   font-weight: 400;
   @media(min-width: 780px) {
@@ -34,7 +38,7 @@ body>header{
   border: none;
 }
 *{
-  font-size: 1.9rem;
+  font-size: 1.85rem;
 }
 p{
   padding-top: 3%;
@@ -42,4 +46,25 @@ p{
 footer{
   background: url(/src/img/darthvader.jpg) no-repeat;
   background-size: cover;
+  & *{
+    line-height: 43px;
+  }
+  & > header{
+    padding:2%;
+  }
+}
+.underline{
+  &, &>a{
+  font-weight: 300;
+  font-size: 1.65rem;
+  }
+  &>a{
+    text-decoration: underline;
+  }
+}
+h3{
+  font-weight: 300 !important;
+  font-size: 1.65rem !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
