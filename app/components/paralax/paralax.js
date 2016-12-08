@@ -39,10 +39,10 @@ var Parralax = (function(){
         parallaxDecalageVertical: parralax.parallaxDecalageVertical
     }
 }());
-
+/*
 window.onload = function() {
     Parralax.init([
         {'target': '.parralax-1', 'movePer': .2, 'parent':'.body-parralax'},
         {'target': '.parralax-2', 'movePer': .5, 'parent':'.body-parralax'},
         ]);
-};
+};*/

@@ -39,13 +39,13 @@ var Parralax = (function(){
         parallaxDecalageVertical: parralax.parallaxDecalageVertical
     }
 }());
-
+/*
 window.onload = function() {
     Parralax.init([
         {'target': '.parralax-1', 'movePer': .2, 'parent':'.body-parralax'},
         {'target': '.parralax-2', 'movePer': .5, 'parent':'.body-parralax'},
         ]);
-};
+};*/
 /**
  * Created by grizzly on 07/12/2016.
  */
@@ -67,17 +67,16 @@ const ParralaxES6 = (() => {
              */
             constructor(data = []) {
                 this.checkParamFormat(data)
-                    .then(function(elements){
+                    .then(function(data){
                         //pollyfil
                         window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function(f){setTimeout(f, 1000/60)};
-                        _elements= elements;
+                        _elements= data.elements;
                     },function(e){
                         console.error(`==:: ERROR on Parralax Class ParralaxEffect ::==
                                         Oups... une erreur est survenue 
                                         Erreur dans le format attendu
                                         `,e);
                         _elements = [];
-                        this.animationParralax();
 
                     }).catch(function(e){
                         console.error(`==::  ERROR on Parralax Class ParralaxEffect ::==
@@ -86,6 +85,7 @@ const ParralaxES6 = (() => {
                                         `,e);
                         _elements = [];
                     });
+                return this;
             }
             /**
              * Controle des types attendues pour les données
@@ -107,23 +107,26 @@ const ParralaxES6 = (() => {
 
                 });
             }
-            parallaxDecalageVertical(){
-                return _elements.map(function () {
-                    return document.querySelector(el.target).style.top = -window.pageYOffset * el.movePer + 'px';
-                });
-            }
+
+            /**
+             * animation lors de l'écoute du scroll
+             */
             animationParralax(){
                 window.addEventListener('scroll', function(){
-                    window.requestAnimationFrame(ParralaxES6.parallaxDecalageVertical);
+                    window.requestAnimationFrame(()=>{
+                        return _elements.map(function (el) {
+                            return document.querySelector(el.target).style.top = -window.pageYOffset * el.movePer + 'px';
+                        });
+                    });
                 }, false);
             }
     };
 })();
 
-/*
+
 window.onload = function() {
    var ParA = new ParralaxES6([
-        {'target': '.parralax-1', 'movePer': .2},
-        {'target': '.parralax-2', 'movePer': .5}
-    ]);
-};*/
+       {'target': '.parralax-1', 'movePer': .2, 'parent':'.body-parralax'},
+       {'target': '.parralax-2', 'movePer': .5, 'parent':'.body-parralax'},
+    ]).animationParralax();
+};

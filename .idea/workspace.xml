@@ -21,11 +21,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/partA/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
               <caret line="80" column="32" lean-forward="false" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paralax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/paralax/paralax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="454">
+              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#44#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parralaxES6.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/paralax/parralaxES6.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -56,23 +78,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon_twitter.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_prod/src/img/icon_twitter.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon_twitter.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_prod/src/img/icon_twitter.svg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,14 +162,12 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app_prod/src/css/style.min.css" />
         <option value="$PROJECT_DIR$/gulp_extend/concatJs.js" />
-        <option value="$PROJECT_DIR$/app/components/paralax/parralaxES6.js" />
         <option value="$PROJECT_DIR$/app/components/long/long.html" />
         <option value="$PROJECT_DIR$/app/components/paralax/testparalax.html" />
         <option value="$PROJECT_DIR$/gulp_extend/html.js" />
         <option value="$PROJECT_DIR$/app/sources/scss/_global.scss" />
         <option value="$PROJECT_DIR$/app/sources/scss/style.scss" />
         <option value="$PROJECT_DIR$/app/components/paralax/paralax.html" />
-        <option value="$PROJECT_DIR$/app/components/paralax/paralax.js" />
         <option value="$PROJECT_DIR$/app/sources/html/header.html" />
         <option value="$PROJECT_DIR$/app/components/header/header.html" />
         <option value="$PROJECT_DIR$/app/components/paralax/parralax.scss" />
@@ -172,6 +175,8 @@
         <option value="$PROJECT_DIR$/app/components/partB/partB.html" />
         <option value="$PROJECT_DIR$/app/sources/html/footer.html" />
         <option value="$PROJECT_DIR$/app/components/partA/_global.scss" />
+        <option value="$PROJECT_DIR$/app/components/paralax/paralax.js" />
+        <option value="$PROJECT_DIR$/app/components/paralax/parralaxES6.js" />
       </list>
     </option>
   </component>
@@ -494,12 +499,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481109486796</updated>
-      <workItem from="1481109489673" duration="34480000" />
+      <workItem from="1481109489673" duration="35597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34480000" />
+    <option name="totallyTimeSpent" value="35597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="55" width="1440" height="873" extended-state="0" />
@@ -552,14 +557,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/sources/img/icon_facebook.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sources/img/header-bg-2x.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -768,16 +765,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/paralax/paralax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="22" column="107" lean-forward="false" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_prod/src/img/icon_instagram.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -882,6 +869,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="80" column="32" lean-forward="false" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/paralax/paralax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/paralax/parralaxES6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="82" column="6" lean-forward="false" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
           <folding />
         </state>
       </provider>
